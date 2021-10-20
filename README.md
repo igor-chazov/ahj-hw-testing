@@ -1,6 +1,6 @@
 # Организация тестирования
 
-#### [[Github Pages](https://igor-chazov.github.io/ahj-hw-testing/)]
+#### [![Build status](https://ci.appveyor.com/api/projects/status/xn1u37ta9tmjftpy?svg=true)](https://ci.appveyor.com/project/igor-chazov/ahj-hw-testing) [[Github Pages](https://igor-chazov.github.io/ahj-hw-testing/)]
 
 ---
 
