@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   target: 'web',
@@ -9,9 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     assetModuleFilename: 'assets/[name][hash][ext]',
     publicPath: '',
-  },
-  devServer: {
-    port: 9000,
+    clean: true,
   },
   module: {
     rules: [
@@ -38,7 +35,7 @@ module.exports = {
       },
       {
         test: /\.(ico|gif|png|jpg|jpeg)$/i,
-        type: 'asset/resource',  
+        type: 'asset/resource',
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
@@ -60,6 +57,5 @@ module.exports = {
       filename: '[name].css',
       chunkFilename: '[id].css',
     }),
-    new CleanWebpackPlugin(),
   ],
 };
